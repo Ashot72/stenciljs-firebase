@@ -43,4 +43,4 @@ To get started.
 
 Go to [Stencil Firebase Web Components Video](https://youtu.be/_h2jh4JzfRM) page
 
-Go to [Stencil Firebase Web Components description](https://ashot72.github.io/ml5-extension/) page
+Go to [Stencil Firebase Web Components description](https://ashot72.github.io/stenciljs-firebase/) page

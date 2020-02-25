@@ -138,24 +138,18 @@ style='font-size:12.0pt;line-height:107%'>1)<span style='font:7.0pt "Times New R
 </span></span></i><i><span style='font-size:12.0pt;line-height:107%'>Custom
 HTML Element </span></i><span style='font-size:12.0pt;line-height:107%'>is bunch
 of JavaScript functionalities that allows us to define our own HTML tags and
-the logic behind it. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
-107%'> </span></p>
+the logic behind it.  </span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><i><span
 style='font-size:12.0pt;line-height:107%'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></i><i><span style='font-size:12.0pt;line-height:107%'>Shadow DOM
-­</span></i><span style='font-size:12.0pt;line-height:107%'>specification is
-all about giving us some features to create our own DOM tree that is hidden
-away from the main DOM.</span></p>
+</span></i><span style='font-size:12.0pt;line-height:107%'>specification is all
+about giving us some features to create our own DOM tree that is hidden away
+from the main DOM.</span></p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
 107%'>It is especially helpful when we talk about CSS styling because the <i>shadow
 DOM </i>will allow us to define CSS styles that only effect our custom element.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
-107%'>&nbsp;</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
 style='font-size:12.0pt;line-height:107%'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -320,9 +314,9 @@ style='font-size:12.0pt;line-height:107%'> and in order to access</span></p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
 107%'>it from the code you have to append <i>.json</i>. So, the path to access
-the database becomes  </span><a
-href="https://svelte-forum.firebaseio.com/forums.json" target="_blank"><span
-style='font-size:12.0pt;line-height:107%'>https://svelte-forum.firebaseio.com/forums.json</span></a></p>
+the database becomes </span><a
+href="https://svelte-forum.firebaseio.com/forums.json"><span style='font-size:
+12.0pt;line-height:107%'>https://svelte-forum.firebaseio.com/forums.json</span></a></p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
 107%'>&nbsp;</span></p>
@@ -331,8 +325,7 @@ style='font-size:12.0pt;line-height:107%'>https://svelte-forum.firebaseio.com/fo
 107%'>&nbsp;</span></p>
 
 <p class=MsoListParagraphCxSpMiddle><img border=0 width=1069 height=500
-id="Picture 9" src="index_files/image007.jpg"><span style='font-size:12.0pt;
-line-height:107%'> </span></p>
+id="Picture 9" src="index_files/image007.jpg"></p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
 107%'>Figure 7</span></p>
@@ -380,14 +373,13 @@ tree. Firebase database tree renderer is our second component.</span></p>
 <p class=MsoListParagraphCxSpMiddle><img border=0 width=1170 height=652
 id="Picture 14" src="index_files/image010.png"></p>
 
-<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+<p class=MsoListParagraphCxSpLast><span style='font-size:12.0pt;line-height:
 107%'>Figure 10</span></p>
 
-<p class=MsoListParagraphCxSpLast><span style='font-size:12.0pt;line-height:
-107%'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>     If we
-look at the page source, we will see our two custom controls, <i>fbs-auth-modal</i>
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If we look
+at the page source, we will see our two custom controls, <i>fbs-auth-modal</i>
 and <i>fbs-db-tree</i>. You should also notice that they both have been created
 with <i>Shadow DOM</i> we already talked about.</span></p>
 
@@ -412,8 +404,8 @@ programmatically set or change the </span></p>
 
 <p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>opened</span></i><span
 style='font-size:12.0pt;line-height:107%'> property from outside JavaScript for
-example, then <i>Stencil </i>will detect the change and will automatically
-re-run the <i>render </i>method and it will do it in a very efficient manner</span></p>
+example, then <i>Stencil </i>will detect the change and will automatically re-run
+the <i>render </i>method and it will do it in a very efficient manner</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>so that it
 does not re-render the entire DOM that was generated based on it; the only the
@@ -542,7 +534,7 @@ src="index_files/image022.png"></p>
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 23</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>By default, <i>Prop</i>
-can be changed from outside and immutable from inside the component logic. 
+can be changed from outside and immutable from inside the component logic.
 However, it is possible to explicitly allow a <i>Prop </i>to be mutated from </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>inside the
@@ -558,7 +550,7 @@ src="index_files/image023.png"></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If we set <i>modal.opened
 = true</i> from outside instead of calling <i>modal.open()</i> method then
-there is no need to specify  {mutable:true} property as we just call it from
+there is no need to specify {mutable:true} property as we just call it from
 outside.</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
@@ -706,14 +698,13 @@ src="index_files/image035.png"></p>
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>For that
 reason, in our modal component we specify <i>fbsAuthenticated</i> event.</span></p>
 
-<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>bubbles ­</span></i><span
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>bubbles</span></i><span
 style='font-size:12.0pt;line-height:107%'>-<i> </i>indicating whether the event
 bubbles up through the DOM or not. </span></p>
 
 <p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Composed</span></i><span
-style='font-size:12.0pt;line-height:107%'> – indicating weather or not the
-event can be bubbled across the boundary between the shadow DOM and the regular
-DOM.</span></p>
+style='font-size:12.0pt;line-height:107%'>- indicating whether or not the event
+can be bubbled across the boundary between the shadow DOM and the regular DOM.</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
@@ -946,9 +937,9 @@ as </span></p>
 <p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Stencil</span></i><span
 style='font-size:12.0pt;line-height:107%'> Integration among the frameworks is similar.
 First, we have to import <i>defineCustomElements </i>from our package we
-installed via <i>npm install</i> and then we need to execute that</span></p>
+installed via <i>npm install</i> and then we need to execute</span></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'> function
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>that function
 and pass the <i>window </i>object as an argument. This ensures that our custom
 elements are added to our project.</span></p>
 
