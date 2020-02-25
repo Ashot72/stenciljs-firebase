@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  --color-primary: #a34224;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form {
+  margin-top: 2rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 1rem;
+  height: 150px;
+}
+
+.result {
+  width: 365px;
+  word-break: break-all;
+}
+
+.framewrok {
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Web Components</title>
+    <style>
+      html {
+        --color-primary: #007bff;
+      }
+
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #007bff;
+        cursor: pointer;
+      }
+
+      input[type='text'] {
+        width: 400px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .form {
+        margin-top: 2rem;
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 1rem;
+        height: 150px;
+      }
+
+      .result {
+        width: 365px;
+        word-break: break-all;
+      }
+    </style>
+    <script type="module" src="/build/firebase-stencil.esm.js"></script>
+    <script nomodule src="/build/firebase-stencil.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="https://stenciljs.com/">Stencil.js</a></li>
+      <li style="float:right">
+        <a class="active" href="#" onclick="auth('SignUp')">Sign Up</a>
+      </li>
+      <li style="float:right;  margin-right: 1px;">
+        <a class="active" id="signIn" href="#" onclick="auth('SignIn')"
+          >Sign In</a
+        >
+      </li>
+    </ul>
+
+    <fbs-auth-modal mode="SignIn">
+      <h1 id="header">Sign In</h1>
+      <span id="submit" slot="submit">Sign In</span>
+    </fbs-auth-modal>
+
+    <div style="display:flex; justify-content: space-around;">
+      <div>
+        <fbs-db-tree></fbs-db-tree>
+      </div>
+      <div class="form" style="display:flex; flex-direction: column;">
+        <div>
+          <label for="dbkey">Web API Key</label><br />
+          <input
+            type="text"
+            id="dbkey"
+            value="AIzaSyAJbvF6_AozZdUQ1wEloNMUrsTUDzebjO0"
+          /><br />
+          <label for="dbPath">Database Path</label><br />
+          <input
+            type="text"
+            id="dbPath"
+            value="https://svelte-forum.firebaseio.com/forums.json"
+          /><br /><br />
+        </div>
+        <div class="form result">
+          <div style="display: flex; justify-content: center;">
+            Selected Tree Path
+          </div>
+          <div id="tree"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.querySelector('fbs-auth-modal')
+      const dbPath = document.querySelector('fbs-db-tree')
+
+      dbPath.addEventListener('fbsDbPathSelected', event => {
+        const tree = document.querySelector('#tree')
+        tree.innerText = event.detail
+      })
+
+      function auth (mode) {
+        modal.setAttribute('mode', mode)
+        modal.setAttribute('db-key', document.querySelector('#dbkey').value)
+        dbPath.setAttribute('db-path', document.querySelector('#dbPath').value)
+
+        const header = document.querySelector('#header')
+        const submit = document.querySelector('#submit')
+
+        if (mode === 'SignIn') {
+          header.innerText = 'Sign In'
+          submit.innerText = 'Sign In'
+        } else {
+          header.innerText = 'Sign Up'
+          submit.innerText = 'Sign Up'
+        }
+
+        if (!modal.isOpened) {
+          modal.open()
+        }
+      }
+    </script>
+  </body>
+</html>

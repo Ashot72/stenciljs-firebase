@@ -1,0 +1,1023 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:16.0pt;line-height:107%'>Stenic.js Firebase Web Components</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>GitHub
+Repository: </span><a href="https://github.com/Ashot72/stenciljs-firebase"
+target="_blank"><span style='font-size:12.0pt;line-height:107%'>https://github.com/Ashot72/stenciljs-firebase</span></a></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Video Link: </span><a
+href="https://youtu.be/_h2jh4JzfRM" target="_blank"><span style='font-size:
+12.0pt;line-height:107%'>https://youtu.be/_h2jh4JzfRM</span></a></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Web
+components </span></i><span style='font-size:12.0pt;line-height:107%'>are just
+your own custom HTML elements that are not built into the browser but they are
+created by you as a developer or by some other developer</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>that you can
+use in your projects. </span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Why would
+we use Web Components?</span></i></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>One great
+advantage is that a web component allows you to encapsulate logic and a user
+interface in one custom HTML tag, which can be used across our page</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>or even
+reuse across multiple projects. We just take the JavaScript file and drop it
+into any other project. We can even have a project, say, in <i>Angular</i>, <i>React</i>
+or</span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Vue</span></i><span
+style='font-size:12.0pt;line-height:107%'> and use the same web component in all
+of them. That is a great advantage as normally we would not be able to share
+React components with <i>Angular</i> or</span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Vue</span></i><span
+style='font-size:12.0pt;line-height:107%'> for example. We can also publish our
+component or a set of components even to <i>npm </i>and then install it into
+any project that we want to use it with <i>npm install </i>command.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We are going
+exactly to do that; publish our components to <i>npm</i> and use it both in <i>Angular</i>,
+<i>React</i> and <i>Vue</i> projects.</span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Web Components
+</span></i><span style='font-size:12.0pt;line-height:107%'>are made up of three
+important parts.</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><i><span
+style='font-size:12.0pt;line-height:107%'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></i><i><span style='font-size:12.0pt;line-height:107%'>Custom
+HTML Element </span></i><span style='font-size:12.0pt;line-height:107%'>is bunch
+of JavaScript functionalities that allows us to define our own HTML tags and
+the logic behind it. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'> </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><i><span
+style='font-size:12.0pt;line-height:107%'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></i><i><span style='font-size:12.0pt;line-height:107%'>Shadow DOM
+­</span></i><span style='font-size:12.0pt;line-height:107%'>specification is
+all about giving us some features to create our own DOM tree that is hidden
+away from the main DOM.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>It is especially helpful when we talk about CSS styling because the <i>shadow
+DOM </i>will allow us to define CSS styles that only effect our custom element.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:107%'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:12.0pt;line-height:107%'>Templates and
+Slots </span></i><span style='font-size:12.0pt;line-height:107%'>allow us to
+define our own HTML structure which is hidden behind our custom element and
+which allows us to add some flexible entry </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>points, so called <i>slots</i> that we can actually populate with
+information from outside.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><b><i><span style='font-size:12.0pt;
+line-height:107%'>Stencil</span></i></b><span style='font-size:12.0pt;
+line-height:107%'> </span><a href="https://stenciljs.com/" target="_blank"><span
+style='font-size:12.0pt;line-height:107%'>https://stenciljs.com/</span></a><span
+style='font-size:12.0pt;line-height:107%'> is not a JavaScript framework like <i>Angular</i>
+and it is not a library like <i>React</i>. It is a tool that runs on your
+machine </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>which you will never deploy to a website that is then running in the web.
+<i>Stencil</i> is a compiler for native web components and in the end, it will </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>generate a native JavaScript web component. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><i><span style='font-size:12.0pt;
+line-height:107%'>Stencil </span></i><span style='font-size:12.0pt;line-height:
+107%'>gives us a way nicer syntax and lot of convenience features which we can
+use to write web components in a more convenient and error safe </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>way using JavaScript and also Typescript. <i>Stencil </i>then will
+compile that code down to native JavaScript web components. We do not need to
+ship any</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>extra library to make these components work in the browser.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>If you are familiar with React, Stencil uses JSX and the same principles
+for displaying data.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1186 height=602
+id="Picture 3" src="index_files/image001.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 1</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>I built two Stencil web components that can be talked to each other even
+without writing a single code on the page they have been added. The first
+control is an authentication (SignIn/SignUp)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>modal web component to authenticate to Firebase and the second one is a Firebase
+database tree renderer web component. Before exploring the web components, we
+should understand </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>where some of the Firebase settings are coming from. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1019 height=542
+id="Picture 6" src="index_files/image002.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 2</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>We can query the Firebase Auth backend through a REST API. This can be
+used for various operations such as creating a new user, signing in existing
+ones</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>and editing or deleting these users and the Firebase Web API Key is used
+for those operations. The key can be obtained from the Project Settings page.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1057 height=408
+id="Picture 7" src="index_files/image003.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 3</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>We enabled <i>Email/Password Sign-in in method</i>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1065 height=501
+id="Picture 8" src="index_files/image004.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 4</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Currently, there are two users authenticated.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1167 height=617
+id="Picture 12" src="index_files/image005.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 5</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>All Firebase Realtime Database data is stored as JSON objects. When you
+add data to the JSON tree, it becomes a node in the existing JSON structure
+with an associate key.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1158 height=495
+id="Picture 13" src="index_files/image006.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 6</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>If you click <i>forums </i>tree node you will be navigated to forums
+structure. You should notice that the database path is changed to </span><a
+href="https://svelte-forum.firebaseio.com/forums" target="_blank"><span
+style='font-size:12.0pt;line-height:107%'>https://svelte-forum.firebaseio.com/forums</span></a><span
+style='font-size:12.0pt;line-height:107%'> and in order to access</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>it from the code you have to append <i>.json</i>. So, the path to access
+the database becomes  </span><a
+href="https://svelte-forum.firebaseio.com/forums.json" target="_blank"><span
+style='font-size:12.0pt;line-height:107%'>https://svelte-forum.firebaseio.com/forums.json</span></a></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1069 height=500
+id="Picture 9" src="index_files/image007.jpg"><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 7</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Here is our first modal web component written in Stencil.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1071 height=557
+id="Picture 10" src="index_files/image008.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 8</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>The same component can be used both for <i>Sign In</i> and <i>Sign Up</i>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1107 height=508
+id="Picture 11" src="index_files/image009.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 9</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Once you authenticated you will see database JSON objects rendered as a
+tree. Firebase database tree renderer is our second component.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img border=0 width=1170 height=652
+id="Picture 14" src="index_files/image010.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle><span style='font-size:12.0pt;line-height:
+107%'>Figure 10</span></p>
+
+<p class=MsoListParagraphCxSpLast><span style='font-size:12.0pt;line-height:
+107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>     If we
+look at the page source, we will see our two custom controls, <i>fbs-auth-modal</i>
+and <i>fbs-db-tree</i>. You should also notice that they both have been created
+with <i>Shadow DOM</i> we already talked about.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=947 height=521 id="Picture 17"
+src="index_files/image011.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 11</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>The reason
+they use Shadow DOM is because we defined <i>shadow: true</i> in the custom <i>Stencil</i>
+web components.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In Stencil
+web components we use <i>@Prop() and @State()</i> similar to React. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>@Prop() does
+one important thing. <i>Stencil </i>will now watch for the attribute named <i>opened
+</i>and if we set or change such an attribute or if we directly
+programmatically set or change the </span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>opened</span></i><span
+style='font-size:12.0pt;line-height:107%'> property from outside JavaScript for
+example, then <i>Stencil </i>will detect the change and will automatically
+re-run the <i>render </i>method and it will do it in a very efficient manner</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>so that it
+does not re-render the entire DOM that was generated based on it; the only the
+part of the DOM that changed. So, <i>@Prop() </i>is kind of adds an automatic
+watcher.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=902 height=400 id="Picture 18"
+src="index_files/image012.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 12</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If we want
+to reflect changes of the props, to the attributes (we will see it soon), we
+can configure a prop by passing a JavaScript object <i>{reflect: true}</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=871 height=543 id="Picture 19"
+src="index_files/image013.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 13</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When we
+click on <i>Sign In</i> button and open the modal having <i>opened</i> prop <i>{reflect:
+true} </i>then we see that<i> fbs-auth-modal </i>has <i>opened</i> attribute.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=856 height=337 id="Picture 20"
+src="index_files/image014.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 14</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Remove <i>{reflect:
+true}</i></span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></i></p>
+
+<p class=MsoNormal><img border=0 width=1055 height=564 id="Picture 21"
+src="index_files/image015.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 15</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In this case
+you see <i>opened </i>attribute is not set. In some scenarios setting attribute
+can be very useful like in our case. Without <i>opened </i>property our modal
+is missing and we will find out why.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=856 height=571 id="Picture 22"
+src="index_files/image016.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 16</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We want to
+apply a default style from inside our component (shadow DOM) only if some
+condition is true on our custom element. We have a special selector <i>:host </i>which
+allows to style your </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>element. We
+change the modal (id=modal) opacity to 1 to make it visible only if our custom
+control defines <i>opened</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1101 height=506 id="Picture 23"
+src="index_files/image017.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 17</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>With <i>{reflect:
+true} </i>we set <i>opened </i>property and our modal with id=modal can be seen
+as <i>:host([opened]) #modal </i>condition is met and returns <i>true</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=811 height=326 id="Picture 24"
+src="index_files/image018.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 18</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You can even
+test it directly inside the console. Remove or rename <i>opened </i>attribute,
+hit enter and modal will disappear. Setting <i>opened </i>back will show the
+modal again.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=553 height=661 id="Picture 25"
+src="index_files/image019.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 19</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We can also prove
+that our component styling is inside the shadow DOM.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1084 height=663 id="Picture 27"
+src="index_files/image020.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 21</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When we
+click on <i>Sign In</i> button we call <i>modal.open()</i> method.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1031 height=494 id="Picture 28"
+src="index_files/image021.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 22</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In the code
+we just set <i>opened</i> prop to true (which in its turn sets <i>opened</i>
+attribute via reflect: true to our custom control) and modal appears.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1082 height=549 id="Picture 29"
+src="index_files/image022.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 23</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>By default, <i>Prop</i>
+can be changed from outside and immutable from inside the component logic. 
+However, it is possible to explicitly allow a <i>Prop </i>to be mutated from </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>inside the
+component by declaring it as <i>mutable</i>. As we change <i>this.opened</i>
+inside the code we should set { mutable: true} to <i>opened</i> prop.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1070 height=623 id="Picture 30"
+src="index_files/image023.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 24</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If we set <i>modal.opened
+= true</i> from outside instead of calling <i>modal.open()</i> method then
+there is no need to specify  {mutable:true} property as we just call it from
+outside.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1096 height=454 id="Picture 31"
+src="index_files/image024.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 25</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We defined <i>slot</i>
+with default <i>Submit</i> value which is changed either <i>Sign In</i> or <i>Sign
+Up</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=922 height=527 id="Picture 32"
+src="index_files/image025.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 26</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If you want
+to style slotted content, there is special selector you can use inside your
+Shadow DOM styling and that is the special pseudo selector ::slotted.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You call
+this like a function and pass the selector of the slotted content.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1117 height=494 id="Picture 33"
+src="index_files/image026.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 27</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>I selected
+all slotted content that has<i> h1</i> tag. Note, that we can set up some
+default styling from the main DOM.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1148 height=565 id="Picture 34"
+src="index_files/image027.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 28</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Here <i>color</i>
+property is overwritten to <i>yellow</i> and new <i>margin-left</i> property
+has been set to <i>h1</i> tag from the main DOM styling.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1142 height=483 id="Picture 35"
+src="index_files/image028.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 29</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You will see
+some info displayed inside the console after you have been authenticated (<i>Sign
+In</i> or <i>Sign Up</i>). One of them is <i>idToken</i>. When a user or device
+signs in using</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Firebase
+Authentication, Firebase creates a corresponding ID token that uniquely
+identifies them and grant them access to several resources, such as Realtime
+Database.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You can
+re-use that ID token to authenticate the Realtime Database REST API and make
+requests on behalf of that user.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=735 height=657 id="Picture 36"
+src="index_files/image029.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 30</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>If I
+navigate to forums.json I can see the database info and do not need
+authenticate to see it.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1138 height=616 id="Picture 37"
+src="index_files/image030.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 31</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>The reason
+is that in Database Rules I allowed <i>forums</i>, <i>topics</i> and <i>posts</i>
+to be accessed anonymously.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1027 height=583 id="Picture 38"
+src="index_files/image031.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 32</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>I commented <i>forums</i>
+not to be accessed anonymously.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=710 height=167 id="Picture 39"
+src="index_files/image032.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 33</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Now, I can
+not retrieve <i>forums</i>; <i>Permission denied</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=934 height=617 id="Picture 40"
+src="index_files/image033.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 34</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>To access
+the resource we have to pass <i>IdToken</i> via <i>?auth=IdToken</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1089 height=437 id="Picture 41"
+src="index_files/image034.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 35</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>This means
+that after being authenticated we have to somehow pass the auth info (idToken
+and the rest) from our first web component which is the modal to the second one
+</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>which is the
+Firebase Database tree renderer in order to authenticate and render the tree.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1118 height=530 id="Picture 42"
+src="index_files/image035.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 36</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>For that
+reason, in our modal component we specify <i>fbsAuthenticated</i> event.</span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>bubbles ­</span></i><span
+style='font-size:12.0pt;line-height:107%'>-<i> </i>indicating whether the event
+bubbles up through the DOM or not. </span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Composed</span></i><span
+style='font-size:12.0pt;line-height:107%'> – indicating weather or not the
+event can be bubbled across the boundary between the shadow DOM and the regular
+DOM.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1092 height=543 id="Picture 43"
+src="index_files/image036.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 37</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Once we
+obtain <i>auth</i> data we <i>emit</i> it.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=918 height=534 id="Picture 44"
+src="index_files/image037.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 38</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In tree
+renderer component we listen to the <i>fbsAuthenticated</i> event we emitted
+from the modal component. By default, <i>@Listen </i>for events emitted inside
+of the render</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>function, so
+of the DOM, of the <i>Shadow DOM</i> belonging to this component. To ensure that
+it can listen globally we need to specify {target: 'body'}. Our <i>fbsAuthenticated
+</i>from the modal</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>bubbles up
+the DOM tree, all the way to <i>body </i>element.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1124 height=602 id="Picture 45"
+src="index_files/image038.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 39</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>It reaches
+the <i>body</i> node and then we can listen to that with {target: 'body'}.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1125 height=519 id="Picture 46"
+src="index_files/image039.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 40</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>I just signed
+in and you see that auth info passed from the modal component to tree renderer
+component via <i>fbsAuthenticated</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=886 height=225 id="Picture 51"
+src="index_files/image040.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 41</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You may
+notice that tree renderer component has a bluish rectangle border when no error
+occurs.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal> <img border=0 width=940 height=195 id="Picture 50"
+src="index_files/image041.png"></p>
+
+<p class=MsoNormal>Figure 42</p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When an
+error occurs then the border turned into red.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=976 height=512 id="Picture 53"
+src="index_files/image042.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 43</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>As we
+already discussed we can change a default style from inside our component
+(shadow DOM) by means of a special selector <i>:host</i>. Note, we also</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>specified
+:host(.error), by passing <i>.error</i> class to <i>:host</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=996 height=504 id="Picture 54"
+src="index_files/image043.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 44</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In tree
+renderer's component <i>render</i> method we specified <i>Host </i>functional
+component and assigned class ,<i>error</i> which is called when <i>@State()
+error</i> state is changed.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When we
+receive an error such as an invalid database path we just change the state to
+error and <i>.error</i> class is applied via :Host(.error) rendering red
+borders.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=931 height=577 id="Picture 55"
+src="index_files/image044.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 45</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You can overwrite
+the <i>.error</i> class from the main DOM.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1141 height=452 id="Picture 56"
+src="index_files/image045.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 46</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Components
+can be composed easily by adding the HTML tag to the JSX code. Since the
+components are just HTML tags, nothing to be imported to use a <i>Stencil</i>
+component</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>within
+another <i>Stencil</i> component. You see we embedded spinner component both
+into the modal and tree renderer components.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=814 height=400 id="Picture 57"
+src="index_files/image046.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 47</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Modal
+component spinner.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=948 height=259 id="Picture 58"
+src="index_files/image047.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 48</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Tree
+renderer component spinner. These two components shared the same <i>spinier</i>
+component.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1183 height=467 id="Picture 62"
+src="index_files/image048.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 49</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When you
+select a tree node then the entire path to the root is displayed on the page
+where the components have been added.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1123 height=529 id="Picture 63"
+src="index_files/image049.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 50</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>This time we
+specify <i>fbsDbPathSelected </i>event in tree render component similar to what
+we did in the modal component.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1005 height=623 id="Picture 64"
+src="index_files/image050.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 51</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>In the main
+page where our components are hosted, we get access to tree renderer component
+via <i>querySelector</i> then we add event listener to listen <i>fbsDbPathSelected
+event.</i></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>When the
+event is fired, we get some event data and display it.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1087 height=389 id="Picture 59"
+src="index_files/image051.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 52</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>I want to
+use our two controls in Angular, React and Vue projects. The first thing I have
+to do is to publish it to npm via <i>npm publish</i> command. I named it <i>stencil-firebase-db</i></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>and
+published it.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1036 height=565 id="Picture 60"
+src="index_files/image052.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 53</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>I created
+three projects Angular, React and Vue. Also, specified the package I published
+in order to install via <i>npm install</i> command.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1053 height=551 id="Picture 61"
+src="index_files/image053.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 54</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We have to
+integrate our components into the projects. I will show it for React and you
+can look into the code for Angular and Vue or read the Stencil integration doc
+as </span></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;line-height:107%'>Stencil</span></i><span
+style='font-size:12.0pt;line-height:107%'> Integration among the frameworks is similar.
+First, we have to import <i>defineCustomElements </i>from our package we
+installed via <i>npm install</i> and then we need to execute that</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'> function
+and pass the <i>window </i>object as an argument. This ensures that our custom
+elements are added to our project.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1087 height=479 id="Picture 65"
+src="index_files/image054.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 55</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Here is the
+Angular version of the app.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1137 height=466 id="Picture 66"
+src="index_files/image055.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 56</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>This is the
+React version of the app.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>You see that
+we shared <i>the</i> <i>same</i> <i>components</i> in different frameworks
+which is a great advantage as normally we would not be able to share <i>React</i>
+components with <i>Angular</i></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Or <i>Vue</i>
+for example. The only difference is that they use different themes.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1241 height=549 id="Picture 67"
+src="index_files/image056.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 57</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>We have a
+default color hardcoded in components' CSS files and if no color is specified
+from outside then that color is used. We can make it settable from outside by
+using CSS properties.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=711 height=530 id="Picture 68"
+src="index_files/image057.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 58 </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>For the
+Angular we specified brownish color (Figure 55)</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=819 height=533 id="Picture 69"
+src="index_files/image058.png"></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Figure 59</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>For the
+React some aqua color (Figure 56)</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

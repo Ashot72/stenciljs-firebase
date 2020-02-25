@@ -1,0 +1,122 @@
+#backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal {
+  position: fixed;
+  top: 10vh;
+  left: 25%;
+  width: 50%;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+}
+
+:host([opened]) #backdrop,
+:host([opened]) #modal {
+  opacity: 1;
+  pointer-events: all;
+}
+
+:host([opened]) #modal {
+  top: 15vh;
+}
+
+::slotted(h1) {
+  font-size: 1.25rem;
+  color: white;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  padding: 0px 0 5px 12px;
+  background-color: var(--color-primary, #007bff);
+}
+
+#main {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1px 6px 0 0;
+  background-color: var(--color-primary, #007bff);
+}
+
+.close:hover,
+.close:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  padding-bottom: 7px;
+}
+
+#actions {
+  border-top: 1px solid #ccc;
+  padding: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#actions button {
+  margin: 0px 3px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--color-primary, #007bff);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
